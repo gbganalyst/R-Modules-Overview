@@ -53,7 +53,7 @@ background-size: 40%, 10%
 
 class: title-page, center, middle
 
-## R training modules
+## Overview of R training modules
 
 ```{r, echo=FALSE}
 use_logo(
@@ -96,7 +96,7 @@ Goal:
 class: inverse, middle
 name: toc
 
-## R programming modules
+## List of modules
 
 .w-100.lh-copy[
 
@@ -115,7 +115,7 @@ name: toc
 class: middle
 name: c1
 
-## R programming fundamentals
+## 1. R programming fundamentals
 
 .w-100.lh-copy[
 This is a beginner-friendly introduction to the R programming language. In this module, you will learn everything about data types, data structures, and other base functions. We will also introduce you to various data simulations in R. Since R is a functional programming language, we will introduce you to writing user-defined functions in the latter part of this module. 
@@ -126,7 +126,7 @@ This is a beginner-friendly introduction to the R programming language. In this 
 class: middle
 name: c2
 
-## R packages and R project
+## 2. R packages and R project
 
 .w-100.lh-copy[
 R comes with many default packages whose functions are known as base functions. For example, `is.na()`, `colSums()`, and `anyNA()`. Packages extend the functionality that base functions offer us. This module will introduce you to installing and loading different packages with one line of code. You will also learn how to design your workflow, that is, set a working directory with the help of the RStudio project for data science reproducibility. Furthermore, you will learn to import various data formats in R.
@@ -136,7 +136,7 @@ R comes with many default packages whose functions are known as base functions. 
 class: middle
 name: c3
 
-## Data Analysis and Visualization
+## 3. Data Analysis and Visualization
 
 .w-100.lh-copy[
 This module will introduce you to the pipe operator with the help of the magrittr package. You will learn how to chain different functions together. With dplyr package, you will be introduced to various dplyr verbs such as `select()`, `filter()`, `mutate()`, `group_by()`, and `summarise()` for data management and analysis. Also, you will be introduced to data visualization using ggplot2 and plotly for dynamic visualization.
@@ -146,7 +146,7 @@ This module will introduce you to the pipe operator with the help of the magritt
 class: middle
 name: c4
 
-## Rmarkdown and xaringan presentation
+## 4. Rmarkdown and xaringan presentation
 
 .w-100.lh-copy[
 In this module, you will learn how to report your data analysis and visualization using rmarkdown for different output such as `html`, `pdf`, and `MS-Word` and xaringan for an interactive deck or slide. This module will equip you to communicate your insight from the data, and you will also learn some markdown syntax, which will allow you to use rmarkdown and xaringan slide.
