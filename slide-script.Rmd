@@ -1,0 +1,163 @@
+---
+output:
+  xaringan::moon_reader:
+    yolo: false
+    lib_dir: libs
+    css: xaringan-themer.css
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: true
+      #ratio: 16:9
+      slideNumberFormat: "%current%"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(echo = TRUE, 
+                      tidy = 'styler', 
+                      comment = NA,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+
+# Loaded packages
+
+install.load::install_load(c("knitr", "xaringanExtra", "xaringan", "tidyverse", "kableExtra", "countdown"))
+
+xaringanExtra::use_xaringan_extra(include = c("tile_view", "editable", "share_again", "broadcast", "animate_css", "panelset", "tachyons", "fit_screen", "clipboard", "search", "scribble", "freezeframe"))
+
+use_webcam(width = 150, height = 150)
+
+use_extra_styles()
+
+```
+
+background-image: url(images/gbg.png), url(images/R_logo.png)
+background-position: 0% 100%, 100% 0%
+background-size: 40%, 10%
+
+class: title-page, center, middle
+
+## R training modules
+
+```{r, echo=FALSE}
+use_logo(
+  image_url = "images/gbg.png",
+  link_url = "https://bit.ly/gbganalyst",
+  position = xaringanExtra::css_position(top = "1em", right = "1em"),
+  exclude_class = c("title-page", "inverse", "hide_logo")
+)
+```
+
+---
+class: about-me-slide, inverse, middle, center
+
+## About the trainer
+
+<img style="border-radius: 80%;" src="images/ezekiel.jpeg" width="180px"/>
+
+### Ezekiel Adebayo Ogundepo
+
+#### Data Scientist, Statistician
+
+.fade[Virus Outbreak Data Network (VODAN Africa & Asia)<br> Nigeria Chapter]
+
+
+[`r icons::fontawesome("link")` https://bit.ly/gbganalyst](https://bit.ly/gbganalyst)
+[`r icons::fontawesome("twitter")` @gbganalyst](https://twitter.com/gbganalyst)
+[`r icons::icon_style(icons::fontawesome("github"), scale = 1)` @gbganalyst](https://github.com/gbganalyst)
+
+---
+class: middle
+
+.w-100.lh-copy[
+
+Goal:
+
+> To make your journey easier in R programming for data science, we have developed series of modules to help you learn R programming without stress. Our learning resources assume you are a beginner and are happy to learn R for data science-related projects. The modules are sufficient and carefully arranged in a structured manner. There are many quizzes and self-review questions for each module to help you remember what you have learnt, and at the end, there is a capstone project to build a portfolio using R for data science.
+]
+
+---
+class: inverse, middle
+name: toc
+
+## R programming modules
+
+.w-100.lh-copy[
+
+- [R programming fundamentals ](#c1)
+
+- [R packages and R project](#c2)
+
+- [Data Analysis and Visualization](#c3)
+
+- [Rmarkdown and xaringan presentation](#c4)
+
+]
+
+
+---
+class: middle
+name: c1
+
+## R programming fundamentals
+
+.w-100.lh-copy[
+This is a beginner-friendly introduction to the R programming language. In this module, you will learn everything about data types, data structures, and other base functions. We will also introduce you to various data simulations in R. Since R is a functional programming language, we will introduce you to writing user-defined functions in the latter part of this module. 
+]
+
+
+---
+class: middle
+name: c2
+
+## R packages and R project
+
+.w-100.lh-copy[
+R comes with many default packages whose functions are known as base functions. For example, `is.na()`, `colSums()`, and `anyNA()`. Packages extend the functionality that base functions offer us. This module will introduce you to installing and loading different packages with one line of code. You will also learn how to design your workflow, that is, set a working directory with the help of the RStudio project for data science reproducibility. Furthermore, you will learn to import various data formats in R.
+]
+
+---
+class: middle
+name: c3
+
+## Data Analysis and Visualization
+
+.w-100.lh-copy[
+This module will introduce you to the pipe operator with the help of the magrittr package. You will learn how to chain different functions together. With dplyr package, you will be introduced to various dplyr verbs such as `select()`, `filter()`, `mutate()`, `group_by()`, and `summarise()` for data management and analysis. Also, you will be introduced to data visualization using ggplot2 and plotly for dynamic visualization.
+]
+
+---
+class: middle
+name: c4
+
+## Rmarkdown and xaringan presentation
+
+.w-100.lh-copy[
+In this module, you will learn how to report your data analysis and visualization using rmarkdown for different output such as `html`, `pdf`, and `MS-Word` and xaringan for an interactive deck or slide. This module will equip you to communicate your insight from the data, and you will also learn some markdown syntax, which will allow you to use rmarkdown and xaringan slide.
+]
+
+
+---
+class: middle, center
+
+
+```{r, echo=FALSE}
+include_graphics("images/gbg.png")
+```
+
