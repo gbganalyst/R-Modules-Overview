@@ -115,7 +115,7 @@ name: toc
 class: middle
 name: c1
 
-## 1. R programming fundamentals
+## 1. Fundamentals of R programming
 
 .w-100.lh-copy[
 This is a beginner-friendly introduction to the R programming language. In this module, you will learn everything about data types, data structures, and other base functions. We will also introduce you to various data simulations in R. Since R is a functional programming language, we will introduce you to writing user-defined functions in the latter part of this module. 
@@ -154,8 +154,22 @@ In this module, you will learn how to report your data analysis and visualizatio
 
 
 ---
+class: middle
+
+## Module Completion
+
+Upon the completion of this course, you will be be ready to use R professionally.
+---
 class: middle, center
 
+## Training feedback
+
+http://bit.ly/r-training-feedback
+
+<br>
+<br>
+<br>
+<br>
 
 ```{r, echo=FALSE}
 include_graphics("images/gbg.png")
