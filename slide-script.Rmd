@@ -108,6 +108,7 @@ name: toc
 
 - [Rmarkdown and xaringan presentation](#c4)
 
+- [Web scraping using ralger package](#c5)
 ]
 
 
@@ -184,6 +185,22 @@ and
 
 ]
 
+---
+class: middle
+name: c5
+
+## 5. Web scraping using ralger package
+
+.w-100.lh-copy[
+Scraping a website is simpler with the ralger R package. The strength of ralger package is derived from the `rvest` and `xml2` packages.
+
+This material assumes that you are a beginner at web scraping and can conveniently use the tidyverse suite of packages.
+
+---
+
+You can check the module presentation by visiting <https://bit.ly/webscraping-with-ralger>
+
+]
 
 
 ---

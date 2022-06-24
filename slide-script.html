@@ -11,7 +11,7 @@
     <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x8660043e5114e8a84e6f865c434944e","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"fc9e2b9ce9eb422ca2e7345075d11a89","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -139,6 +139,7 @@ name: toc
 
 - [Rmarkdown and xaringan presentation](#c4)
 
+- [Web scraping using ralger package](#c5)
 ]
 
 
@@ -215,6 +216,22 @@ and
 
 ]
 
+---
+class: middle
+name: c5
+
+## 5. Web scraping using ralger package
+
+.w-100.lh-copy[
+Scraping a website is simpler with the ralger R package. The strength of ralger package is derived from the `rvest` and `xml2` packages.
+
+This material assumes that you are a beginner at web scraping and can conveniently use the tidyverse suite of packages.
+
+---
+
+You can check the module presentation by visiting &lt;https://bit.ly/webscraping-with-ralger&gt;
+
+]
 
 
 ---
@@ -235,7 +252,7 @@ http://bit.ly/r-training-feedback
 &lt;br&gt;
 &lt;br&gt;
 
-&lt;img src="images/gbg.png" width="517" /&gt;
+![](images/gbg.png)&lt;!-- --&gt;
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
@@ -286,6 +303,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
